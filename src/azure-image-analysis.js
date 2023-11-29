@@ -1,5 +1,5 @@
 
-module.exports = async function analyzeImage(endpoint, key, url) {
+async function analyzeImage(endpoint, key, url) {
     try {
         const payload = { url };
         const headers = {
@@ -24,3 +24,5 @@ module.exports = async function analyzeImage(endpoint, key, url) {
         throw error;
     }
 };
+
+export default analyzeImage;
